@@ -1,0 +1,113 @@
+/* Déclaration des polices de caractères */
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+/*reset perso*/
+
+
+/*VARIABLES*/
+:root {
+  --color-fond-beige: #e6e6e6;
+  --color-fond-noir: #1C2122;
+  --color-fond-footer:#333333;
+}
+
+
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+html {
+  font-size: 62.5%; /* (default) 16px * 62.5% = 10px */
+}
+
+body {
+  font-size: 1.6rem; /* (root = html) 10px * 1.6 = 16px */
+  position: relative;
+}
+
+/* HEADER */
+.header{
+  position: absolute;
+  height: 5vh;
+  width: 100%;
+}
+
+/*************************** MAIN *******************************/
+
+.main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.main__home{
+  width: 100%;
+  height: 90vh;
+  /*background: url(../images/minimalist-desk-set-up-computer-keyboard-wsgx9y7sbmda1phm.jpg) top left;
+  background-size: cover;
+  background-attachment: fixed;*/
+  background-color: var(--color-fond-beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:1em;
+  padding: 8em 10em;
+}
+
+/******ABOUT******/
+.main__about{
+  height: 90vh;
+  background-color:var(--color-fond-noir);
+  padding: 5em 5em;
+}
+
+.main__about_cadre{
+  display: flex;
+  background-color:var(--color-fond-beige);
+  height:100%;
+  padding: 3em 5em;
+  gap: 60px;
+}
+
+.main__about-img{
+  border-radius: 20px;
+  box-shadow: rgba(28, 33, 34,0.4) 5px 5px 8px;
+}
+.main__about-text{
+
+}
+/*******SKILLS******/
+.main__skills{
+  height: 50vh;
+  background-color:var(--color-fond-beige);
+}
+.main__cv{
+  height: 280vh;
+  background-color:var(--color-fond-noir);
+}
+.main__projets{
+  height: 90vh;
+  background-color:var(--color-fond-beige);
+}
+.main__contact{
+  height: 70vh;
+  background-color:var(--color-fond-noir);
+}
+.footer{
+  height: 10vh;
+  background-color:var(--color-fond-footer);
+}
+
+.main__title-1{
+  letter-spacing: 3px;
+  color: var(--color-fond-noir);
+  padding: 15px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+}
+
+.main__title-1:last-child{
+  font-size: 2.2rem;
+}
